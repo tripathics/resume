@@ -9,48 +9,107 @@
 \documentclass[]{article}
 \usepackage[hmargin=0.75cm, vmargin=1cm]{geometry}
 
-\usepackage[hidelinks]{hyperref}
+\usepackage[hidelinks]{hyperref}  % links (href)
 
-\usepackage{multicol}
+\usepackage{multicol}     % 2 columns
+\usepackage{titlesec}
+
+\titleformat{\subsubsection}[runin]{
+  \fontsize{10pt}{0pt}
+  \bfseries
+}{}{}{}[]
+
+\titleformat{\section}{
+  \fontspec[Path = fonts/ZillaSlab/]{ZillaSlab-Light}\fontsize{16pt}{24pt}\selectfont \raggedright\uppercase
+}{}{0em}{}
 
 % fonts
 \usepackage[]{fontspec}
-\setmainfont[Path = fonts/OpenSans/OpenSans/]{OpenSans-Regular}
+\setmainfont[Path = fonts/OpenSans/OpenSans/, BoldItalicFont=OpenSans-MediumItalic, BoldFont=OpenSans-Medium, ItalicFont=OpenSans-MediumItalic]{OpenSans-Light}
+
+% custom commands
+\newcommand{\namesection}[3]{
+  \begin{multicols}{2}
+    \begin{flushleft}
+      \fontsize{30pt}{25pt}
+      \fontspec[Path = fonts/ZillaSlab/]{ZillaSlab-Light}
+      {{ #1 }\\ { #2 }}
+      \columnbreak\\
+    \end{flushleft}
+    \begin{flushright}
+      { #3 }
+    \end{flushright}
+  \end{multicols}
+  \vspace{-10pt}
+}
+
+\newcommand{\subheading}[2]{
+  {\subsubsection*{#1}
+  \hfill #2} \\
+}
+
 % Resume
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
 
-\begin{multicols}{2}
-  \begin{flushleft}
-    {
-      \fontsize{30pt}{10pt}
-      \fontspec[Path = fonts/ZillaSlab/]{ZillaSlab-Medium}
-      \noindent
-      {Chandrashekhar\\
-      Tripathi}
-      \columnbreak\\
-    } 
-  \end{flushleft}
-  \begin{flushright}
-    {
-      +91 (844) 805-2150\\
-      \href{mailto:tripathics17@gmail.com}{tripathics17@gmail.com}\\
-      National Institute of Technology\\
-      Arunachal Pradesh (IN)
-    }
-  \end{flushright}
-\end{multicols}
+\namesection{Chandrashekhar}{Tripathi}{
+  +91 (844) 805-2150\\
+  \href{mailto:tripathics17@gmail.com}{tripathics17@gmail.com}\par
+  National Institute of Technology\\
+  Arunachal Pradesh (IN)
+}
 
 \centering{
-  \href{https://linkedin.com/in/tripathics}{LinkedIn} | 
-  \href{https://tripathics.github.io}{Portfolio} | 
-  \href{https://github.com/tripathics}{GitHub}
+  LinkedIn:// \href{https://linkedin.com/in/tripathics}{\textbf{tripathics}} | 
+  \href{https://tripathics.github.io}{tripathics.github.io} | 
+  GitHub:// \href{https://github.com/tripathics}{\textbf{tripathics} }
 }
 
 \begin{multicols}{2}
+  \begin{flushleft}
+    \section*{Education}
+    \subsection*{NIT Arunachal Pradesh}
+    \subheading{B. Tech in Computer Science Eng}{Oct 2020-2024}
+    Cum. GPA: \textbf{8.9 / 10 (Expected)} \\
+
+    \subsection*{Govt. Higher Sec. School, Rupa}
+    \subheading{Higher Secondary, XII (CBSE)}{Grad. Mar 2019}
+    81.6\% \textbf{1\textsuperscript{st} in District}
+
+    \subheading{Secondary, X (CBSE)}{Grad. Mar 2017}
+    Cum. GPA: \textbf{10 / 10} \\
+    
+    \section*{Coursework}
+    Data Structures \& Algorithms \\
+    Object Oriented Programming \\
+    Operating Systems \\
+    Optimization Methods \\
+    Machine Learning \\
+    Unix Tools and Scripting \\
+
+    \section*{Skills}
+    \subsection*{Programming}
+    \begin{itemize}
+      \item \textbf{Languages:} C, C++, Java
+      \item \textbf{Scripting:} Shell, Python
+      \item \textbf{Frameworks:} React, Flask, Node
+      \item \textbf{Database:} SQL, Firebase
+      \item \textbf{Platforms:} Linux, Firebase
+      \item \textbf{Familiar:} Typescript
+      \item \textbf{Others:} git, Microsoft Office, Sketchup
+    \end{itemize}
+
+    \subsection*{Soft Skills}
+    Leadership \textbullet{} Teamwork \textbullet{} Communication \textbullet{} Organization
+
+    \section*{Experience}
+    \subsection*{Technodaya}
+  \end{flushleft}
+
   
+
 \end{multicols}
 
 \end{document}
