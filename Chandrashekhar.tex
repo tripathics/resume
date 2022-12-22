@@ -7,12 +7,13 @@
 % formatting
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[]{article}
-\usepackage[hmargin=0.75cm, vmargin=1cm]{geometry}
+
+\usepackage[hmargin=0.75cm, vmargin=0.8cm]{geometry}
 
 \usepackage[hidelinks]{hyperref}  % links (href)
 
 \usepackage{multicol}     % 2 columns
-\setlength\columnsep{24pt}
+\setlength\columnsep{20pt}
 
 % colors
 % Color definitions
@@ -21,6 +22,7 @@
 \definecolor{primary}{HTML}{2b2b2b}
 \definecolor{headingclr}{HTML}{6A6A6A}
 \definecolor{subheadingclr}{HTML}{333333}
+\definecolor{light}{HTML}{BBBBBB}
 
 % fonts
 \usepackage[]{fontspec}
@@ -35,8 +37,6 @@
   \fontsize{13pt}{13pt}\bfseries\selectfont
 }{}{0em}{}
 \titleformat{\subsubsection}[runin]{\fontsize{10pt}{10pt}\selectfont}{}{0em}{}
-
-
 
 \titleformat{\section}{
   \color{subheadingclr}
@@ -54,7 +54,7 @@
     \begin{flushleft}
       \fontsize{30pt}{25pt}
       \fontspec[Path = fonts/ZillaSlab/]{ZillaSlab-Light}
-      {{ #1 }\\ { #2 }}
+      {{ #1 }\\{ #2 }}
       \columnbreak\\
     \end{flushleft}
     \begin{flushright}
@@ -66,7 +66,7 @@
 
 \newcommand{\subheading}[2]{
   {\subsection{#1}
-  \hfill \normalsize#2} \\
+  \hfill{#2}}\\
   \vspace{2pt}
 }
 
@@ -76,6 +76,10 @@
   \vspace{2pt}
 }
 
+\newcommand{\descript}[1]{
+  {\color{subheadingclr}
+  \raggedright\fontspec[Path = fonts/Raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {\scshape#1} \normalfont}
+}
 
 \newcommand{\datelocation}[1]{
   {\color{date}\fontsize{10pt}{12pt}\bfseries { #1 } \normalfont\\}
@@ -92,58 +96,58 @@
 
 \begin{document}
 
-\namesection{Chandrashekhar}{Tripathi}{
-  +91 (844) 805-2150\\
-  \href{mailto:tripathics17@gmail.com}{tripathics17@gmail.com}\par
+\namesection{Chandrashekhar}{Tripathi}{+91 (844) 805-2150\\
+  \href{mailto:tripathics17@gmail.com}{tripathics17@gmail.com}
+  \par
   National Institute of Technology\\
-  Arunachal Pradesh (IN)
-}
+  Arunachal Pradesh (IN)}
 
 \centering{
-  LinkedIn:// \href{https://linkedin.com/in/tripathics}{\textbf{tripathics}} | 
+  LinkedIn://\href{https://linkedin.com/in/tripathics}{\textbf{tripathics}} | 
   \href{https://tripathics.github.io}{tripathics.github.io} | 
-  GitHub:// \href{https://github.com/tripathics}{\textbf{tripathics} }
+  GitHub://\href{https://github.com/tripathics}{\textbf{tripathics} }
 }
-\noindent\makebox[\linewidth]{\color{headingclr}\rule{\paperwidth}{0.2pt}}
+\noindent\makebox[\linewidth]{\color{light}\rule{\paperwidth}{0.2pt}}
 \vspace{-15pt}
-
 
 \begin{multicols}{2}
   \begin{flushleft}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     % EDUCATION
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-    
-    \section{Education}
-    \subheading{NIT Arunachal Pradesh}{}
+    \section{Education}    
+    \subsection{NIT Arunachal Pradesh}
     \subsubheading{B. Tech in Computer Science Eng}{Oct 2020-2024}
-    Cum. GPA: \textbf{8.9 / 10 (Expected)} \\
+    Cum. GPA: \textbf{8.9 / 10 (Expected)}
 
     \subsection{Govt. Higher Sec. School, Rupa}
     \subsubheading{Higher Secondary, XII (CBSE)}{Grad. Mar 2019}
-    81.6\% \textbf{1\textsuperscript{st} in District}
+    Percentage: \textbf{81.6\%, 1\textsuperscript{st} in District}
 
     \subsubheading{Secondary, X (CBSE)}{Grad. Mar 2017}
-    Cum. GPA: \textbf{10 / 10} \\
+    Cum. GPA: \textbf{10 / 10}
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     % COURSEWORK
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     
     \section{Coursework}
-    Data Structures \& Algorithms \\
-    Object Oriented Programming \\
-    Operating Systems \\
-    Optimization Methods \\
-    Machine Learning \\
-    Unix Tools and Scripting \\
+    \subheading{Undergraduate}{}
+    \begin{tightemize}
+      \item Data Structures \& Algorithms
+      \item Object Oriented Programming
+      \item Operating Systems
+      \item Optimization Methods
+      \item Machine Learning
+      \item Unix Tools and Scripting
+    \end{tightemize}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     % EXPERIENCE
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     
     \section{Experience}
-    \subheading{Indian Oil Corp. Ltd}{SDE Intern}
+    \subheading{Indian Oil Corp. Ltd}{\descript{SDE Intern}}
     \datelocation{Dec 2022 - Present | Assam, IN}
 
     \begin{tightemize}
@@ -151,28 +155,28 @@
       \item Full stack and IoT developer - Client and Admin side application with IoT device. 
     \end{tightemize}
 
-    \subheading{Technodaya}{Editor}
+    \subheading{Technodaya}{\descript{Editor}}
     \datelocation{Sep 2022 - Present | NIT Arunachal Pradesh}
     \begin{tightemize}
-      \item Worked in a team of 3 to create Technodaya Newsletter Website.
+      \item Worked in a team of 3 to create Technodaya Newsletter Website reducing paperwork by 90\%.
       \item Full stack developer - Wrote the code in React and implemented backend with Firebase.
       \item Reduced workload of editors by 70\% by automating content generation.
     \end{tightemize}
 
-    \subheading{Ekarigari Solutions Pvt. Ltd}{IoT Intern}
+    \subheading{Ekarigari Solutions Pvt. Ltd}{\descript{IoT Intern}}
     {
       \color{date}\fontsize{10pt}{12pt}\bfseries
       Aug 2022 - Sep 2022 | Remote
     }
     \begin{tightemize}
-      \item Worked with the Ekarigari team on a Smart Home Automation system using NodeMCU and Arduino.
+      \item Worked with the Ekarigari team on a Smart Home Automation.
+      \item Utilised NodeMCU and Arduino creating a system faster than 50\% of existing systems.
     \end{tightemize}
 
-    \subheading{Business Web Solutions}{Full Stack Developer Intern}
+    \subheading{Business Web Solutions}{\descript{Full Stack Dev Intern}}
     \datelocation{May 2022 - Jul 2022 | Remote}
     \begin{tightemize}
       \item Created full stack website using Django and MySQL.
-      \item Website was lightweight enough to load within 3s on slow 3G networks.
       \item Optimized database to reduce search times by 50\%. 
     \end{tightemize}
 
@@ -197,11 +201,9 @@
     \subheading{Soft Skills}{}
     Leadership \textbullet{} Teamwork \textbullet{} Communication \textbullet{} Organization
 
-
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     % PROJECTS
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-    
     \section{Projects}
     \subheading{Airavat}{\href{https://github.com/tripathics/airavat}{Source}}
     \begin{tightemize}
@@ -233,13 +235,12 @@
     }
     \begin{tightemize}
       \item My homepage website and digital garden running on React and Gatsby, hosted on GitHub pages.
-      \item It is also my blogging website. 
+      \item Ported to Gatsby decreasing load times by 80\%.
     \end{tightemize}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     % ACHIEVEMENTS
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-    
     \section{Achievements}
     \begin{tabular}{rll}
       2022 & 1\textsuperscript{st} prize & NVCTI winter challenge Hackathon\\
@@ -247,7 +248,6 @@
       2022 & 1\textsuperscript{st} prize & Idea pitching, NIT Arunachal Pradesh\\
       2022 & 1\textsuperscript{st} prize & CSS battle, Addovedi 2022\\
     \end{tabular}
-
   \end{flushleft}
 \end{multicols}
 

@@ -90,3 +90,7 @@ sympy-plots-for-*.tex/
 
 # xindy
 *.xdy
+
+# dd
+dd/*.pdf
+dd/*.txt

@@ -1,0 +1,155 @@
+Chandrashekhar
+Tripathi
+
++91 (844) 805-2150
+tripathics17@gmail.com
+National Institute of Technology
+Arunachal Pradesh (IN)
+
+LinkedIn://tripathics | tripathics.github.io | GitHub://tripathics
+
+EDUCATION
+NIT Arunachal Pradesh
+
+SKILLS
+
+B. Tech in Computer Science Eng
+Cum. GPA: 8.9 / 10 (Expected)
+
+Oct 2020-2024
+
+Govt. Higher Sec. School, Rupa
+Higher Secondary, XII (CBSE)
+Percentage: 81.6%, 1st in District
+
+Grad. Mar 2019
+
+Secondary, X (CBSE)
+Cum. GPA: 10 / 10
+
+Grad. Mar 2017
+
+• Languages: C, C++, Java
+• Scripting: Shell, Python
+• Frameworks: React, Flask, Node
+• Database: SQL, Firebase
+• Platforms: Linux, Firebase
+• Familiar: Typescript
+• Others: git, Microsoft Office, Sketchup
+
+Soft Skills
+
+COURSEWORK
+
+Leadership • Teamwork • Communication • Organization
+
+Data Structures & Algorithms
+Object Oriented Programming
+Operating Systems
+Optimization Methods
+Machine Learning
+Unix Tools and Scripting
+
+PROJECTS
+Airavat
+
+EXPERIENCE
+Indian Oil Corp. Ltd
+
+SDE INTERN
+
+Dec 2022 - Present | Assam, IN
+• Selected for the internship from top 3% students of our
+college.
+• Full stack and IoT developer - Client and Admin side
+application with IoT device.
+
+Technodaya
+
+EDITOR
+
+Sep 2022 - Present | NIT Arunachal Pradesh
+• Worked in a team of 3 to create Technodaya Newsletter
+Website.
+• Full stack developer - Wrote the code in React and
+implemented backend with Firebase.
+• Reduced workload of editors by 70% by automating
+content generation.
+
+Ekarigari Solutions Pvt. Ltd
+
+IOT INTERN
+
+Aug 2022 - Sep 2022 | Remote
+• Worked with the Ekarigari team on a Smart Home
+Automation system using NodeMCU and Arduino.
+
+Business Web Solutions
+
+Programming
+
+Source
+
+• Created Airavat, an IoT ecosystem for fleet vehicle
+monitoring and tracking.
+• Tracker device made using NodeMCU (ESP8266), 4G
+SIM Module (SIM7600) and GPS module (GPS NEO-7M).
+• Developed full stack website for Airavat using Flask with
+SQL database.
+
+Technodaya Website
+
+Website | Source
+
+• Created full stack website for Technodaya, technical
+newsletter of NIT Arunachal Pradesh.
+• Full stack developer - React frontend and Firebase
+backend.
+• Intuitive card layout to rearrange magaine sections.
+
+SHIELD web app
+
+Source
+
+• Worked with my team - Team Revolutionists a team of
+4 to build SHIELD, an IoT based ecosystem for secure
+transportation of valuables.
+• Created full stack SHIELD webapp to allow admins to
+track, lock/unlock and monitor shipments and warning
+alerts.
+• Won 1st position in NVCTI winter challenge Hackathon.
+
+Homepage
+
+Website | Source
+
+• My homepage website and digital garden running on
+React and Gatsby, hosted on GitHub pages.
+• It is also my blogging website.
+
+FULL STACK DEV INTERN
+
+May 2022 - Jul 2022 | Remote
+
+• Created full stack website using Django and MySQL.
+• Website was lightweight enough to load within 3s on
+slow 3G networks.
+• Optimized database to reduce search times by 50%.
+
+ACHIEVEMENTS
+2022
+2022
+2022
+2022
+
+1st prize
+1st prize
+1st prize
+1st prize
+
+NVCTI winter challenge Hackathon
+NITAP Designathon 2022
+Idea pitching, NIT Arunachal Pradesh
+CSS battle, Addovedi 2022
+
+
