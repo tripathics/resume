@@ -8,12 +8,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[]{article}
 
-\usepackage[hmargin=0.85cm, vmargin=0.85cm]{geometry}
+\usepackage[hmargin=0.75cm, vmargin=0.8cm]{geometry}
 
 \usepackage[hidelinks]{hyperref}  % links (href)
 
 \usepackage{multicol}     % 2 columns
-\setlength\columnsep{24pt}
+\setlength\columnsep{20pt}
 
 % colors
 % Color definitions
@@ -26,7 +26,7 @@
 
 % fonts
 \usepackage[]{fontspec}
-\setmainfont[Color = primary, Path = fonts/OpenSans/OpenSans/, BoldItalicFont=OpenSans-MediumItalic, BoldFont=OpenSans-Medium, ItalicFont=OpenSans-LightItalic]{OpenSans-Light}
+\setmainfont[Color = primary, Path = fonts/OpenSans/OpenSans/, BoldItalicFont=OpenSans-MediumItalic, BoldFont=OpenSans-Medium, ItalicFont=OpenSans-MediumItalic]{OpenSans-Light}
 
 
 % titles
@@ -70,11 +70,17 @@
   \vspace{2pt}
 }
 
+\newcommand{\expsection}[3]{{
+  \subsection{#1}
+  \hfill{\descript{#3}}
+  \datelocation{#2}
+  \vspace{2pt}
+}}
+
 \newcommand{\subsubheading}[2]{
-  \vspace{-4pt}
   {\subsubsection{#1}
   \hfill \small#2} \\
-  \vspace{0pt}
+  \vspace{2pt}
 }
 
 \newcommand{\descript}[1]{
@@ -88,7 +94,7 @@
 
 % custom environments
 \newenvironment{tightemize}{
-\vspace{-4pt}\begin{itemize}\itemsep2pt \parskip0pt \parsep0pt}
+\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
 
 % Resume
@@ -111,43 +117,60 @@
 \noindent\makebox[\linewidth]{\color{light}\rule{\paperwidth}{0.2pt}}
 \vspace{-15pt}
 
-\begin{multicols}{2}
-  \begin{flushleft}
+% \begin{multicols}{2}
+  % \begin{flushleft}
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     % EDUCATION
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     \section{Education}    
-    \subsection{NIT Arunachal Pradesh}
+    \subheading{NIT Arunachal Pradesh}{}
     \subsubheading{B. Tech in Computer Science Eng}{Oct 2020-2024}
     Cum. GPA: \textbf{8.9 / 10 (Expected)}
 
-    \subsection{Govt. Higher Sec. School, Rupa}
+    \subheading{Govt. Higher Sec. School, Rupa}{}
     \subsubheading{Higher Secondary, XII (CBSE)}{Grad. Mar 2019}
     Percentage: \textbf{81.6\%, 1\textsuperscript{st} in District}
 
     \subsubheading{Secondary, X (CBSE)}{Grad. Mar 2017}
     Cum. GPA: \textbf{10 / 10}
-    \vspace{-8pt}
+    
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+    % COURSEWORK
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+    
+    \section{Coursework}
+    \subheading{Undergraduate}{}
+    \begin{tightemize}
+      \item Data Structures \& Algorithms
+      \item Object Oriented Programming
+      \item Operating Systems
+      \item Optimization Methods
+      \item Machine Learning
+      \item Unix Tools and Scripting
+    \end{tightemize}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     % EXPERIENCE
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     
     \section{Experience}
-    \subheading{Indian Oil Corp. Ltd}{\descript{SDE Intern}}
-    \datelocation{Dec 2022 - Jan 2023 | Assam, IN}
+
+    \expsection{Indian Oil Corp. Ltd}{Dec 2022 - Present | Assam, IN}{SDE Intern}
+
+    % \subheading{Indian Oil Corp. Ltd}{\descript{SDE Intern}}
+    % \datelocation{Dec 2022 - Present | Assam, IN}
 
     \begin{tightemize}
-      \item Interned as a full-stack and IoT developer, developing client and admin-side applications integrated with an IoT device.
-      \item Achieved selection for the internship from among the top 3\% of students in college.
+      \item Selected for the internship from top 3\% students of our college.
+      \item Full stack and IoT developer - Client and Admin side application with IoT device. 
     \end{tightemize}
 
     \subheading{Technodaya}{\descript{Editor}}
     \datelocation{Sep 2022 - Present | NIT Arunachal Pradesh}
     \begin{tightemize}
-      \item Collaborated with 2 teammates to develop Technodaya Newsletter website, cutting paperwork by 90\%.
-      \item Utilized React for frontend and Firebase for backend as a full-stack developer.
-      \item Automated content generation, resulting in a 70\% reduction in editors' workload.
+      \item Worked in a team of 3 to create Technodaya Newsletter Website reducing paperwork by 90\%.
+      \item Full stack developer - Wrote the code in React and implemented backend with Firebase.
+      \item Reduced workload of editors by 70\% by automating content generation.
     \end{tightemize}
 
     \subheading{Ekarigari Solutions Pvt. Ltd}{\descript{IoT Intern}}
@@ -160,77 +183,62 @@
       \item Utilised NodeMCU and Arduino creating a system faster than 50\% of existing systems.
     \end{tightemize}
 
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-    % COURSEWORK
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-    
-    \section{Coursework}
-    % \subheading{Undergraduate}{}
-    \begin{tightemize}
-      \item Data Structures \& Algorithms
-      \item Object Oriented Programming
-      \item Operating Systems
-      \item Database Management Systems
-      \item Machine Learning
-      \item Unix Tools and Scripting
-    \end{tightemize}
-
-    \columnbreak
+    % \columnbreak
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     % SKILLS
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     
     \section{Skills}
-    \vspace{4pt}
+    \subheading{Programming}{}
     \begin{tightemize}
-      \item \textbf{Languages:} C, C++, JavsScript, Java
-      \item \textbf{Scripting languages:} Bash shell, Python
+      \item \textbf{Languages:} C, C++, Java
+      \item \textbf{Scripting:} Shell, Python
       \item \textbf{Frameworks:} React, Flask, Node
-      \item \textbf{Database:} MongoDB, SQL
+      \item \textbf{Database:} SQL, Firebase
       \item \textbf{Platforms:} Linux, Firebase
-      \item \textbf{Familiar:} Typescript, Docker, Android
+      \item \textbf{Familiar:} Typescript
       \item \textbf{Others:} git, Microsoft Office, Sketchup
-      \item \textbf{Soft skills:} Teamwork, Communication, Organization
     \end{tightemize}
-    \vspace{2pt}
+
+    \subheading{Soft Skills}{}
+    Leadership \textbullet{} Teamwork \textbullet{} Communication \textbullet{} Organization
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     % PROJECTS
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     \section{Projects}
-
-    \subheading{Atulyam'23 website}{
-      \href{https://atulyam23.com}{Website} | 
-      \href{https://github.com/tripathics/atulyam-2023}{Source} 
-    }
-    \begin{tightemize}
-      \item Developed NITAP's \textbf{Atulyam Fest} website, utilizing \textbf{frontend design} skills to create a magazine-style UI/UX.
-      \item Used Firebase authentication and Firestore database in the backend.
-    \end{tightemize}
-
-    \subheading{Technodaya Website}{
-      \href{https://technodaya.netlify.app}{Website} | 
-      \href{https://github.com/PursottamSah6003/Designathon-for-one}{Source}
-    }
-    \begin{tightemize}
-      \item Created \textbf{full stack} website for \textbf{Technodaya}, technical newsletter of NIT Arunachal Pradesh.
-      \item Awarded \textbf{1\textsuperscript{st} place} in the NITAP 2022 Designathon.
-    \end{tightemize}
-
     \subheading{Airavat}{\href{https://github.com/tripathics/airavat}{Source}}
     \begin{tightemize}
       \item Created \textbf{Airavat}, an IoT ecosystem for fleet vehicle monitoring and tracking.
       \item Tracker device made using NodeMCU (ESP8266), 4G SIM Module (SIM7600) and GPS module (GPS NEO-7M).
-      \item Developed \textbf{full stack} website for Airavat using Flask with SQL database.
+      \item Developed full stack website for Airavat using Flask with SQL database.
     \end{tightemize}
 
-    \subheading{SHIELD Web App}{\href{https://github.com/tripathics}{Source}}
+    \subheading{Technodaya Website}{
+      \href{https://technodaya.netlify.app}{Website} | 
+      \href{https://github.com/PursottamSah6003}{Source}
+    }
     \begin{tightemize}
-      \item Co-developed \textbf{SHIELD}, an IoT-based ecosystem for secure transportation of valuables with \textbf{Team Revolutionists}. 
-      \item Created a ReactJs web app with Firebase backend enabling shipment tracking, locking/unlocking, monitoring with alerts for admins.
-      \item Awarded \textbf{1\textsuperscript{st} place} in the NVCTI Winter Challenge Hackathon.
+      \item Created full stack website for \textbf{Technodaya}, technical newsletter of NIT Arunachal Pradesh.
+      \item Full stack developer - React frontend and Firebase backend.
+      \item Intuitive card layout to rearrange magaine sections. 
+    \end{tightemize}
+
+    \subheading{SHIELD web app}{\href{https://github.com/tripathics}{Source}}
+    \begin{tightemize}
+      \item Worked with my team - \textbf{Team Revolutionists} a team of 4 to build \textbf{SHIELD}, an IoT based ecosystem for secure transportation of valuables.
+      \item Created full stack SHIELD webapp to allow admins to track, lock/unlock and monitor shipments and warning alerts.
+      \item Won \textbf{1\textsuperscript{st} position} in NVCTI winter challenge Hackathon.
+    \end{tightemize}
+
+    \subheading{Homepage}{
+      \href{https://tripathics.github.io}{Website} | 
+      \href{https://github.com/tripathics/tripathics.githbu.io/tree/src}{Source} 
+    }
+    \begin{tightemize}
+      \item My homepage website and digital garden running on React and Gatsby, hosted on GitHub pages.
+      \item Ported to Gatsby decreasing load times by 80\%.
     \end{tightemize}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
@@ -243,7 +251,7 @@
       2022 & 1\textsuperscript{st} prize & Idea pitching, NIT Arunachal Pradesh\\
       2022 & 1\textsuperscript{st} prize & CSS battle, Addovedi 2022\\
     \end{tabular}
-  \end{flushleft}
-\end{multicols}
+  % \end{flushleft}
+% \end{multicols}
 
 \end{document}
