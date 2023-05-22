@@ -8,12 +8,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[]{article}
 
-\usepackage[hmargin=0.85cm, vmargin=0.85cm]{geometry}
+\usepackage[hmargin=1cm, vmargin=1cm]{geometry}
 
 \usepackage[hidelinks]{hyperref}  % links (href)
 
 \usepackage{multicol}     % 2 columns
-\setlength\columnsep{24pt}
+\setlength\columnsep{1cm}
 
 % colors
 % Color definitions
@@ -45,7 +45,7 @@
 
 % spacing 
 \titlespacing{\section}{0pt}{8pt}{4pt} 
-\titlespacing{\subsection}{0pt}{8pt}{0pt}
+\titlespacing{\subsection}{0pt}{12pt}{0pt}
 \titlespacing{\subsubsection}{0pt}{4pt}{0pt}
 
 % custom commands
@@ -61,7 +61,7 @@
       { #3 }
     \end{flushright}
   \end{multicols}
-  \vspace{-10pt}
+  \vspace{-5pt}
 }
 
 \newcommand{\subheading}[2]{
@@ -71,10 +71,10 @@
 }
 
 \newcommand{\subsubheading}[2]{
-  \vspace{-4pt}
+  % \vspace{-2pt}
   {\subsubsection{#1}
   \hfill \small#2} \\
-  \vspace{0pt}
+  \vspace{2pt}
 }
 
 \newcommand{\descript}[1]{
@@ -88,7 +88,7 @@
 
 % custom environments
 \newenvironment{tightemize}{
-\vspace{-4pt}\begin{itemize}\itemsep2pt \parskip0pt \parsep0pt}
+\vspace{-4pt}\begin{itemize}\itemsep3pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
 
 % Resume
@@ -109,7 +109,7 @@
   GitHub://\href{https://github.com/tripathics}{\textbf{tripathics} }
 }
 \noindent\makebox[\linewidth]{\color{light}\rule{\paperwidth}{0.2pt}}
-\vspace{-15pt}
+\vspace{-8pt}
 
 \begin{multicols}{2}
   \begin{flushleft}
@@ -128,73 +128,6 @@
     \subsubheading{Secondary, X (CBSE)}{Grad. Mar 2017}
     Cum. GPA: \textbf{10 / 10}
     \vspace{-8pt}
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-    % EXPERIENCE
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-    
-    \section{Experience}
-    \subheading{Indian Oil Corp. Ltd}{\descript{SDE Intern}}
-    \datelocation{Dec 2022 - Jan 2023 | Assam, IN}
-
-    \begin{tightemize}
-      \item Interned as a full-stack and IoT developer, developing client and admin-side applications integrated with an IoT device.
-      \item Achieved selection for the internship from among the top 3\% of students in college.
-    \end{tightemize}
-
-    \subheading{Technodaya}{\descript{Editor}}
-    \datelocation{Sep 2022 - Present | NIT Arunachal Pradesh}
-    \begin{tightemize}
-      \item Collaborated with 2 teammates to develop Technodaya Newsletter website, cutting paperwork by 90\%.
-      \item Utilized React for frontend and Firebase for backend as a full-stack developer.
-      \item Automated content generation, resulting in a 70\% reduction in editors' workload.
-    \end{tightemize}
-
-    \subheading{Ekarigari Solutions Pvt. Ltd}{\descript{IoT Intern}}
-    {
-      \color{date}\fontsize{10pt}{12pt}\bfseries
-      Aug 2022 - Sep 2022 | Remote
-    }
-    \begin{tightemize}
-      \item Worked with the Ekarigari team on a Smart Home Automation.
-      \item Utilised NodeMCU and Arduino creating a system faster than 50\% of existing systems.
-    \end{tightemize}
-
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-    % COURSEWORK
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-    
-    \section{Coursework}
-    % \subheading{Undergraduate}{}
-    \begin{tightemize}
-      \item Data Structures \& Algorithms
-      \item Object Oriented Programming
-      \item Operating Systems
-      \item Database Management Systems
-      \item Machine Learning
-      \item Unix Tools and Scripting
-    \end{tightemize}
-
-    \columnbreak
-
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-    % SKILLS
-    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
-    
-    \section{Skills}
-    \vspace{4pt}
-    \begin{tightemize}
-      \item \textbf{Languages:} C, C++, JavsScript, Java
-      \item \textbf{Scripting languages:} Bash shell, Python
-      \item \textbf{Frameworks:} React, Flask, Node
-      \item \textbf{Database:} MongoDB, SQL
-      \item \textbf{Platforms:} Linux, Firebase
-      \item \textbf{Familiar:} Typescript, Docker, Android
-      \item \textbf{Others:} git, Microsoft Office, Sketchup
-      \item \textbf{Soft skills:} Teamwork, Communication, Organization
-    \end{tightemize}
-    \vspace{2pt}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     % PROJECTS
@@ -231,6 +164,72 @@
       \item Co-developed \textbf{SHIELD}, an IoT-based ecosystem for secure transportation of valuables with \textbf{Team Revolutionists}. 
       \item Created a ReactJs web app with Firebase backend enabling shipment tracking, locking/unlocking, monitoring with alerts for admins.
       \item Awarded \textbf{1\textsuperscript{st} place} in the NVCTI Winter Challenge Hackathon.
+    \end{tightemize}
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+    % COURSEWORK
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+    
+    % \section{Coursework}
+    % \begin{tightemize}
+    %   \item Data Structures \& Algorithms
+    %   \item Object Oriented Programming
+    %   \item Operating Systems
+    %   \item Machine Learning
+    %   \item Unix Tools and Scripting
+    % \end{tightemize}
+
+    \columnbreak
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+    % SKILLS
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+    
+    \section{Skills}
+    \vspace{4pt}
+    \begin{tightemize}
+      \item \textbf{Languages:} C, C++, JavsScript, Java
+      \item \textbf{Scripting languages:} Bash shell, Python
+      \item \textbf{Frameworks:} React, Flask, Node
+      \item \textbf{Database:} MongoDB, SQL
+      \item \textbf{Platforms:} Linux, Firebase
+      \item \textbf{Familiar:} Typescript, Docker, Android
+      \item \textbf{Others:} git, Microsoft Office, Sketchup
+      \item \textbf{Soft skills:} Teamwork, Communication, Organization
+    \end{tightemize}
+    \vspace{2pt}
+
+
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+    % EXPERIENCE
+    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
+    
+    \section{Experience}
+    \subheading{Indian Oil Corp. Ltd}{\descript{SDE Intern}}
+    \datelocation{Dec 2022 - Jan 2023 | Assam, IN}
+
+    \begin{tightemize}
+      \item Interned as a \textbf{full-stack} and \textbf{IoT developer}, developing client and admin-side applications integrated with an IoT device.
+      \item Achieved selection for the internship from among the top 3\% of students in college.
+    \end{tightemize}
+
+    \subheading{Technodaya}{\descript{Editor}}
+    \datelocation{Sep 2022 - Present | NIT Arunachal Pradesh}
+    \begin{tightemize}
+      \item Collaborated with 2 teammates to develop Technodaya Newsletter website, cutting paperwork by 90\%.
+      \item Utilized \textbf{React} for frontend and Firebase for backend as a full-stack developer.
+      \item Automated content generation, resulting in a 70\% reduction in editors' workload.
+    \end{tightemize}
+
+    \subheading{Ekarigari Solutions Pvt. Ltd}{\descript{IoT Intern}}
+    {
+      \color{date}\fontsize{10pt}{12pt}\bfseries
+      Aug 2022 - Sep 2022 | Remote
+    }
+    \begin{tightemize}
+      \item Worked with the Ekarigari team on Smart Home Automation.
+      \item Utilised NodeMCU and Arduino creating a system faster than 50\% of existing systems.
     \end{tightemize}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
