@@ -8,7 +8,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[]{article}
 
-\usepackage[hmargin=1cm, vmargin=1cm]{geometry}
+\usepackage[hmargin=0.8cm, vmargin=0.8cm]{geometry}
 
 \usepackage[hidelinks]{hyperref}  % links (href)
 
@@ -34,9 +34,9 @@
 \usepackage{titlesec} % or RequirePackage[loadonly]{titlesec} in a cls file
 \titleformat{\subsection}[runin]{
   \color{subheadingclr}
-  \fontsize{13pt}{13pt}\bfseries\selectfont
+  \fontsize{12pt}{12pt}\bfseries\selectfont
 }{}{0em}{}
-\titleformat{\subsubsection}[runin]{\fontsize{10pt}{10pt}\selectfont}{}{0em}{}
+\titleformat{\subsubsection}[runin]{\fontsize{9pt}{9pt}\selectfont}{}{0em}{}
 
 \titleformat{\section}{
   \color{subheadingclr}
@@ -44,8 +44,8 @@
 }{}{0em}{}
 
 % spacing 
-\titlespacing{\section}{0pt}{8pt}{4pt} 
-\titlespacing{\subsection}{0pt}{12pt}{0pt}
+\titlespacing{\section}{0pt}{16pt}{8pt} 
+\titlespacing{\subsection}{0pt}{12pt}{4pt}
 \titlespacing{\subsubsection}{0pt}{4pt}{0pt}
 
 % custom commands
@@ -61,7 +61,7 @@
       { #3 }
     \end{flushright}
   \end{multicols}
-  \vspace{-5pt}
+  \vspace{-8pt}
 }
 
 \newcommand{\subheading}[2]{
@@ -88,7 +88,9 @@
 
 % custom environments
 \newenvironment{tightemize}{
-\vspace{-4pt}\begin{itemize}\itemsep3pt \parskip0pt \parsep0pt}
+\vspace{-4pt}
+\begin{itemize}
+  \itemsep3pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
 
 % Resume
@@ -109,7 +111,7 @@
   GitHub://\href{https://github.com/tripathics}{\textbf{tripathics} }
 }
 \noindent\makebox[\linewidth]{\color{light}\rule{\paperwidth}{0.2pt}}
-\vspace{-8pt}
+\vspace{-5pt}
 
 \begin{multicols}{2}
   \begin{flushleft}
@@ -127,7 +129,6 @@
 
     \subsubheading{Secondary, X (CBSE)}{Grad. Mar 2017}
     Cum. GPA: \textbf{10 / 10}
-    \vspace{-8pt}
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     % PROJECTS
@@ -198,8 +199,6 @@
       \item \textbf{Others:} git, Microsoft Office, Sketchup
       \item \textbf{Soft skills:} Teamwork, Communication, Organization
     \end{tightemize}
-    \vspace{2pt}
-
 
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%5
     % EXPERIENCE
